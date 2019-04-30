@@ -428,8 +428,8 @@ footer p {
   /* HEADER: HERO ( */
   .heroText {
     margin-top: 30%;
-    padding-right: 25%;
-    width: 75%;
+    padding-right: 50%;
+    width: 100%;
   }
 
   .socialIcons a {
@@ -544,14 +544,15 @@ footer p {
 @media (max-width: 768px) {
   /* SECTION: HERO */
   .heroText {
+    padding-right: 40%;
     width: 100%;
   }
 
-  /* .topNavi {
+  .topNavi {
     width: 100%;
   }
 
-  .topNavi li {
+  /* .topNavi li {
     padding: 0% 5%;
   } */
 
@@ -610,10 +611,6 @@ footer p {
   }
 
   /* SECTION: HERO */
-  .topNavi li {
-    display: none;
-  }
-
   h1 {
     font-size: 5rem;
   }
@@ -735,9 +732,10 @@ footer p {
   }
 
   /* SECTION: HERO */
-  .hero {
-
+    .topNavi li {
+    display: none;
   }
+
   .heroText {
     margin-top: 50%;
     padding-right: 20%;
