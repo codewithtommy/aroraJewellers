@@ -1,0 +1,840 @@
+/* ====================================================================================== */
+/* GENERAL: This is SETUP + TAB :D! */
+/* ====================================================================================== */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* { -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* ====================================================================================== */
+/* GENERAL: General Styles| Wrapper, img, Headings, Navs, button */
+/* UPDATES: This section was last updated: 04-30-2019 */
+/* ====================================================================================== */
+
+html {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 125%;
+  /* NOTE: Secondary font family is font-family: 'Italiana', serif; for COPY & PASTE purposes. */
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0% 10%;
+  /* NOTE: This is a general WRAPPER set throughout the whole webpage to maintain a consistent 10% MARGIN on LEFT and RIGHT sides of each section. */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0%;
+  padding: 0%;
+}
+
+h1,
+h3 {
+  font-family: 'Italiana', serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: .9;
+}
+
+h2 {
+  color: #FABA63;
+  font-size: 1.8rem;
+  font-weight: 100; 
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Italiana', serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 0.78rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* RESERVED: For HOVER + DROP DOWN CSS for TOP NAVIGATION */
+
+button {
+  background: none;
+  border-color: #FABA63;
+  padding: 1% 1.5%;
+  text-transform: uppercase;
+}
+
+button a {
+  color: #FFFFFF;
+  font-family: 'Italiana', serif;
+  text-decoration: none;
+}
+
+/* GENERAL: Similar BACKGROUND COLOR and/or PADDING styles for the following SECTIONS below. */
+
+.intro, 
+.explore,
+.additionalInfo {
+  background-color: #14171F;
+  padding: 7.5% 0%;
+}
+
+.collection,
+.gallery {
+  background-color: #201E1F;
+}
+
+/* ====================================================================================== */
+/* HEADER: HERO PAGE| START (Top Navigation/ Hero Title + Background/ Social Links */
+/* UPDATES: This section was last updated: 04-30-2019 */
+/* ====================================================================================== */
+
+.topNavi {
+  padding: 1.5% 0;
+  width: 50%;
+}
+
+.topNavi li {
+  padding-right: 5%;
+}
+
+.topNavi li a {
+  color: #FABA63;
+}
+
+/* RESERVED: For HOVER + DROP DOWN CSS for TOP NAVIGATION */
+
+.hero {
+  background: url(../images/heroModel.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.heroText {
+  margin-top: 15%;
+  padding-right: 2.5%;
+  /* position: absolute; */
+  text-align: right;
+  /* top: 30%; */
+  width: 50%;
+  /* NOTE: For this style, please remove commented out styles by April 30. */
+}
+
+.socialIcons {
+  bottom: 3.5%;
+  position: absolute;
+  /* NOTE: Double check whether I should set POSTION relative to .heroText and adjust TOP/RIGHT/LEFT/BOTTOM values. */
+  right: 3%;
+  text-align: center;
+  width: 2%;
+}
+
+.socialIcons a {
+  font-size: 1rem;
+}
+
+.socialIcons i {
+  color: #FFFFFF;
+  padding: 25% 0%;
+}
+
+/* ====================================================================================== */
+/* SECTION: INTRO: HAND CRAFTED| START (Hand Crafted Image/ Content Right) */
+/* UPDATES: This section was last updated: 04-30-2019 */
+/* ====================================================================================== */
+
+.introImage {
+  float: left;
+  width: 25%
+}
+
+/* RESERVED: To ADD OVERLAY or OTHER EFFECT to .introImage img */
+
+.introText {
+  float: right;
+  padding-left: 3.5%;
+  width: 75%;
+}
+
+.introText h3 {
+  margin-top: -1.2%;
+  /* NOTE: -1.2% is given because the sample PSD given had the H3 line top flush with the .introImage img (introHandCraft) */
+}
+
+.introText p {
+  margin: 0%;
+  padding-bottom: 4.5%;
+}
+
+/* ====================================================================================== */
+/* SECTION: LATEST COLLECTION| START (3X Image/ Necklace + Rings + Pendant/ Pearl) */
+/* UPDATES: This section was last updated: 04-30-2019 */
+/* ====================================================================================== */
+
+.collection {
+  padding: 5% 0% 12%;
+}
+
+.collection h3 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.collectionContainer img {
+  float: left;
+  width: calc(100% / 3 - 2%);
+}
+
+/* RESERVED: To ADD OVERLAY or OTHER EFFECT to .collectionContainer img*/
+
+.two img {
+  margin: 0% 3%;
+  /* NOTE: Style below is to target the 2ND image ONLY... under the COLLECTION/ Gallery section. This is to give it a MARGIN of 3% on LEFT and RIGHT sides without collapsing the section. */
+}
+
+/* ====================================================================================== */
+/* SECTION: EXPLORE ICONS| START (3X Icons/ Catalogue + Events + Collaborations) */
+/* UPDATES: This section was last updated: 04-30-2019 */
+/* ====================================================================================== */
+
+.exploreIcon {
+  padding: 0% 7.5%;
+}
+
+.exploreContainer {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+}
+
+.exploreContainer i {
+  color: #FABA63; 
+  font-size: 2.5rem;
+}
+
+.exploreContainer p {
+  color: #FFFFFF;
+  font-family: 'Italiana', serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0%;
+  text-transform: uppercase;
+}
+
+/* ====================================================================================== */
+/* SECTION: GALLERY| START (TOP: Sustainable Materials + Image Right/ BOT: Mix & Match + Image Left) */
+/* UPDATES: This section was last updated: 04-30-2019 */
+/* ====================================================================================== */
+
+/* GENERAL: Similar styles for the following SECTIONS below. */
+
+.galleryTopImage,
+.galleryBotImage {
+  width: 50%;
+}
+
+.galleryTopText,
+.galleryBotText {
+  width: 50%;
+}
+
+.galleryTopText p,
+.galleryBotText p {
+  font-size: 0.78rem;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0%;
+  padding-bottom: 7.5%;
+}
+
+/* TOP: LEFT & RIGHT Styles| START */
+
+.galleryTopText {
+  float: left;
+  padding: 7.5% 5% 0% 10%;
+}
+
+.galleryTopText h3 {
+  padding-right: 7.5%;
+}
+
+.galleryTopImage {
+  float: right;
+}
+
+/* BOTTOM: LEFT & RIGHT Styles| START */
+
+.galleryBotText {
+  float: right;
+  padding: 7.5% 10% 0% 7%;
+}
+
+.galleryBotImage {
+  float: left;
+}
+
+/* ====================================================================================== */
+/* SECTION: ADDITIONAL INFO| START (Bottom Navigation/ Subscribe/ Contact) */
+/* UPDATES: This section was last updated: 04-30-2019 */
+/* ====================================================================================== */
+
+.additionalInfo {
+  padding: 7.5% 0%;
+}
+
+/* GENERAL: Similar styles for the following SECTIONS below. */
+
+.bottomNavi,
+.subscribe,
+.contact {
+  float: left;
+}
+
+/* BOTTOM: LEFT/ BOTTOM NAVIGATION */
+
+.bottomNavi {
+  width: 25%;
+}
+
+.bottomNavi li {
+  display: block;
+}
+
+.bottomNavi li a {
+  color: #FFFFFF;
+  font-family: 'Italiana', serif;
+  text-transform: uppercase;
+}
+
+/* BOTTOM: MIDDLE/ SUBSCRIBE */
+
+.subscribe {
+  text-align: center;
+  width: 50%;
+}
+
+.subscribeContent {
+  margin-bottom: 1.5%;
+}
+
+.subscribe p,
+.contact p {
+  margin: 0%;
+}
+
+/* BOTTOM: MIDDLE/ FORM */
+
+input[type="email"],
+input[type="submit"] {
+  font-size: 0.78rem;
+  float: left;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+input[type="email"] {
+  /* font-style: italic; */
+  padding: 1.5% 0%;
+  width: 75%;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  border-color: transparent;
+  color: #FFFFFF;
+  font-family: 'Italiana', serif;
+  padding: 2% 0%;
+  text-transform: uppercase;
+  width: 25%;
+}
+
+/* BOTTOM: RIGHT/ CONTACT*/
+
+.contact {
+  text-align: right;
+  width: 25%;
+}
+
+.contact p {
+  line-height: 1.5;
+  padding-left: 5%;
+}
+
+/* ====================================================================================== */
+ /* FOOTER: COPYRIGHT| START (Basic Copyright Disclaimer)  */
+ /* UPDATES: This section was last updated: 04-30-2019 */
+ /* ====================================================================================== */
+
+footer {
+  background-color: #000000;
+}
+
+footer p {
+  margin: 0%;
+  padding: 1% 0%;
+  text-align: center;
+}
+
+/* ====================================================================================== */
+/* RESPONSIVE: All media stylings for each section are listed below.  */
+/* NOTES: BREAKPOINTS in order: 1024px > 910px > 768px > 670px > 475px > 360px */
+/* UPDATES: This section was last updated: ??-??-?? */
+
+/* ====================================================================================== */
+/* BREAKPOINT: DESKTOP (MEDIUM?) */
+/* SIZE: MAX WIDTH @ 1024px */
+/* ====================================================================================== */
+
+@media (max-width: 1024px) {
+  /* HEADER: HERO ( */
+  .heroText {
+    margin-top: 30%;
+    padding-right: 25%;
+    width: 75%;
+  }
+
+  .socialIcons a {
+    font-size: 1.3rem;
+  }
+
+  .socialIcons i {
+    padding: 40% 0%;
+  }
+
+  /* SECTION: INTRO */
+  .introImage {
+    width: 35%;
+  }
+
+  .introText {
+    width: 65%;
+  }
+
+  .introText h3 {
+    margin-top: -2.2%;
+  }
+
+  /* SECTION: EXPLORE */
+  .exploreIcon i {
+    font-size: 2rem;
+  }
+
+  /* SECTION: GALLERY */
+  .galleryTopText {
+    padding: 5% 0% 0% 10%;
+  }
+
+  .galleryBotText {
+    padding: 5% 10% 0% 5.5%;
+  }
+
+  /* SECTION: ADDITIONAL INFO */
+  input[type="submit"] {
+    letter-spacing: 0px;
+  }
+}
+
+/* ====================================================================================== */
+/* BREAKPOINT: LAYOUT ADJUSTMENT*/
+/* SIZE: MAX WIDTH @ 910px */
+
+/* NOTE: Breakpoint is created at 910px because the GALLERY starts to collapse & ADDITIONAL INFO starts to squish together... so a LAYOUT ADJUSTMENT is REQUIRED. */
+/* ====================================================================================== */
+
+@media (max-width: 910px) {
+  /* SECTION:  GALLERY */
+  .galleryTopImage,
+  .galleryTopText,
+  .galleryBotImage,
+  .galleryBotText {
+    float: none;
+    margin: 0% auto;
+    width: 80%;
+  }
+
+  .galleryBottom {
+    padding-bottom: 5%;
+  }
+
+  .galleryTopText,
+  .galleryBotText {
+    padding: 5% 0%;
+  }
+
+  /* SECTION: ADDITIONAL INFO */
+  .bottomNavi,
+  .subscribe,
+  .contact {
+    float: none;
+  }
+
+  .bottomNavi,
+  .subscribe,
+  .contact {
+    text-align: center;
+    width: 100%;
+  }
+
+  .bottomNavi {
+    margin-bottom: 5%;
+  }
+  .bottomNavi li {
+    display: inline-block;
+    padding: 0% 5%;
+  }
+
+  input[type="submit"] {
+    letter-spacing: 1.5px;
+    padding: 1.75% 0%;
+  }
+
+  .contact {
+    margin-top: 5%;
+  }
+
+  .contactContent p {
+    padding: 0% 32%;
+  }
+}
+
+/* ====================================================================================== */
+/* BREAKPOINT: TABLET (MEDIUM SIZE?) */
+/* SIZE: MAX WIDTH: 768px*/
+/* ====================================================================================== */
+
+@media (max-width: 768px) {
+  /* SECTION: HERO */
+  .heroText {
+    width: 85%;
+  }
+
+  /* .topNavi {
+    width: 100%;
+  }
+
+  .topNavi li {
+    padding: 0% 5%;
+  } */
+
+  /* SECTION: INTRO */
+  .introImage {
+    width: 40%;
+  }
+
+  .introText {
+    width: 60%;
+  }
+
+  /* SECTION: EXPLORE */
+  .exploreContainer p {
+    font-size: 1rem;
+  }
+
+  /* SECTION: ADDITIONAL INFO */
+  .contactContent p {
+    padding: 0% 30%;
+  }
+}
+
+/* ====================================================================================== */
+/* BREAKPOINT: TABLET (SMALL SIZE) */
+/* SIZE: MAX WIDTH @ 670px */
+/* ====================================================================================== */
+
+@media (max-width: 670px) {
+  /* GENERAL */
+  .buttonWrapper {
+    padding: 5% 0% 10%;
+  }
+
+  .buttonWrapper,
+  h3 {
+    text-align: center;
+  }
+
+  .introText,
+  .galleryTopText,
+  .galleryBotText {
+    padding: 0%;
+  }
+  
+  .introText p,
+  .galleryTopText p,
+  .galleryBotText p {
+    padding-bottom: 0%; 
+  }
+
+  .introText h3,
+  .galleryTopText h3,
+  .galleryBotText h3 {
+    margin: 5% 0%;
+  }
+
+  /* SECTION: HERO */
+  .topNavi li {
+    display: none;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .socialIcons {
+    /* bottom: 0%;
+    left: 10%;
+    width: 20%; */
+    display: none;
+    /* NOTE: SOCIAL ICONS a and i are @media styled already. If you want to see where it is displayed, ERASE display: none; and undo the comments.  */
+  }
+
+  /* .socialIcons a {
+    text-decoration: none;
+  } */
+
+  /* .socialIcons i {
+    padding-right: 5%;
+  } */
+
+  /* SECTION: INTRO */
+  .intro {
+    padding-bottom: 0%;
+  }
+  .introImage {
+    width: 100%;
+  }
+
+  .introText {
+    width: 100%;
+  }
+
+  /* SECTION: COLLECTION */
+  .collection {
+    padding-bottom: 10%;
+  }
+
+  .collectionContainer img {
+    /* margin-bottom: 10%; */
+    /* width: 100%; */
+    width: 48.75%;
+    /* NOTE: @media styles that are commented out above, are left as a placeholder. They are styled so images are displayed at 100% so each image is easier to view in TABLET > MOBILE mode. */
+  }
+
+  .one img {
+    margin: 0% 1.25% 0% 0%;
+  }
+
+  .two img {
+    margin: 0% 0% 0% 1.25%;
+  }
+
+  .three img {
+    display: none;
+  }
+
+  /* SECTION: EXPLORE */
+  .exploreContainer {
+    width: 100%;
+  }
+
+  .exploreContainer i {
+    font-size: 2.5rem;
+  }
+
+  .exploreContainer p {
+    margin: 5% 0% 15%;
+    font-size: 1.5rem;
+  }
+
+  /* SECTION: GALLERY */
+  .galleryTopText h3 {
+    padding-right: 0%;
+  }
+
+  /* SECTION: ADDITIONAL INFO */
+  .bottomNavi li {
+    padding: 0% 2.5%;
+  }
+
+  .contactContent p {
+    padding: 0% 12%;
+  }
+
+  input[type="email"],
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  input[type="email"] {
+    margin-bottom: 2.5%;
+  }
+
+  input[type="submit"] {
+    margin-bottom: 10%;
+  }
+
+  input[type="submit"] {
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+/* ====================================================================================== */
+/* BREAKPOINT: MOBILE (LARGE SIZE) */
+/* SIZE: MAX WIDTH @ 425px */
+/* ====================================================================================== */
+
+@media (max-width: 425px) {
+  /* SECTION: HERO */
+  .hero {
+
+  }
+  .heroText {
+    margin-top: 50%;
+    padding-right: 20%;
+    width: 95%;
+  }
+}
+
+/* ====================================================================================== */
+/* BREAKPOINT: MOBILE (SMALL SIZE) */
+/* SIZE: MAX WIDTH @ 360px */
+/* ====================================================================================== */
+
+@media (max-width: 360px) {
+  /* GENERAL */
+  .wrapper {
+    margin: 0%;
+  }
+
+  /* SECTION: HERO */
+  .hero {
+    background-position-x: 61%;
+  }
+
+  .heroText {
+    padding: 0%;
+  }
+
+  .heroText h1 {
+    font-size: 4rem;
+  }
+
+  .heroText h2 {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .topNavi {
+    text-align: center;
+  }
+
+  .topNavi li a {
+    font-size: 0.78rem;
+  }
+
+  .socialIcons {
+    display: none;
+  }
+
+  /* SECTION: INTRO */
+  .intro {
+    padding: 0% 5%;
+  }
+
+  /* SECTION: EXPLORE */
+  .exploreContainer i {
+    font-size: 2rem;
+  }
+
+  .exploreContainer p {
+    font-size: 1rem;
+  }
+  /* SECTION: GALLERY */
+  .galleryTopImage,
+  .galleryTopText,
+  .galleryBotImage,
+  .galleryBotText {
+    margin: 0% auto;
+    width: 100%;
+  }
+
+  .galleryTopImage,
+  .galleryBotImage {
+    overflow: hidden;
+  }
+
+  .galleryTopImage {
+    height: 225px;
+  }
+
+  .galleryBotImage {
+    height: 250px;
+  }
+
+  .galleryTopText p,
+  .galleryBotText p {
+    padding: 0% 5%; 
+  }
+
+  /* SECTION: ADDITIONAL INFO */
+  .bottomNaviContent {
+    margin: 0% 5%;
+  }
+
+  .bottomNaviContent li {
+    padding: 0% 2.5%;
+  }
+
+  .bottomNaviContent li a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-transform: none;
+  }
+}
