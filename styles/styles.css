@@ -27,7 +27,6 @@ html {
 .wrapper {
   max-width: 1170px;
   margin: 0% 10%;
-  /* NOTE: This is a general WRAPPER set throughout the whole webpage to maintain a consistent 10% MARGIN on LEFT and RIGHT sides of each section. */
 }
 
 img {
@@ -98,8 +97,6 @@ button a:hover {
   color: #FABA63;
 }
 
-/* RESERVED: For HOVER + DROP DOWN CSS for TOP NAVIGATION */
-
 button {
   background: none;
   border-color: #FABA63;
@@ -149,8 +146,6 @@ button a {
   color: #FFFFFF;
 }
 
-/* RESERVED: For HOVER + DROP DOWN CSS for TOP NAVIGATION */
-
 .hero {
   background: url(../images/heroModel.jpg) no-repeat center fixed;
   background-size: cover;
@@ -160,17 +155,13 @@ button a {
 .heroText {
   margin-top: 15%;
   padding-right: 2.5%;
-  /* position: absolute; */
   text-align: right;
-  /* top: 30%; */
   width: 50%;
-  /* NOTE: For this style, please remove commented out styles by April 30. */
 }
 
 .socialIcons {
   bottom: 3.5%;
   position: absolute;
-  /* NOTE: Double check whether I should set POSTION relative to .heroText and adjust TOP/RIGHT/LEFT/BOTTOM values. */
   right: 3%;
   text-align: center;
   width: 2%;
@@ -247,7 +238,7 @@ button a {
 
 .two img {
   margin: 0% 3%;
-  /* NOTE: Style below is to target the 2ND image ONLY... under the COLLECTION/ Gallery section. This is to give it a MARGIN of 3% on LEFT and RIGHT sides without collapsing the section. */
+  /* NOTE: Target the 2ND image ONLY... to prevent collapsing. */
 }
 
 /* _______________________________________________________________________________________ */
