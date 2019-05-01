@@ -175,6 +175,16 @@ button a {
 .socialIcons i {
   color: #FFFFFF;
   padding: 25% 0%;
+  top: 0%;
+  right: 0%;
+}
+
+.bars i {
+  display: none;
+  font-size: 2rem;
+  right: 2.5%;
+  top: 2.5%;
+  position: absolute;
 }
 
 /* ====================================================================================== */
@@ -268,11 +278,8 @@ button a {
 /* GENERAL: Similar styles for the following SECTIONS below. */
 
 .galleryTopImage,
-.galleryBotImage {
-  width: 50%;
-}
-
 .galleryTopText,
+.galleryBotImage,
 .galleryBotText {
   width: 50%;
 }
@@ -491,13 +498,13 @@ footer p {
     width: 80%;
   }
 
-  .galleryBottom {
-    padding-bottom: 5%;
-  }
-
   .galleryTopText,
   .galleryBotText {
     padding: 5% 0%;
+  }
+
+  .galleryBottom {
+    padding-bottom: 5%;
   }
 
   /* SECTION: ADDITIONAL INFO */
@@ -505,11 +512,6 @@ footer p {
   .subscribe,
   .contact {
     float: none;
-  }
-
-  .bottomNavi,
-  .subscribe,
-  .contact {
     text-align: center;
     width: 100%;
   }
@@ -517,6 +519,7 @@ footer p {
   .bottomNavi {
     margin-bottom: 5%;
   }
+
   .bottomNavi li {
     display: inline-block;
     padding: 0% 5%;
@@ -551,10 +554,6 @@ footer p {
   .topNavi {
     width: 100%;
   }
-
-  /* .topNavi li {
-    padding: 0% 5%;
-  } */
 
   /* SECTION: INTRO */
   .introImage {
@@ -639,10 +638,8 @@ footer p {
   .intro {
     padding-bottom: 0%;
   }
-  .introImage {
-    width: 100%;
-  }
 
+  .introImage,
   .introText {
     width: 100%;
   }
@@ -724,7 +721,6 @@ footer p {
 
 @media (max-width: 425px) {
   /* GENERAL */
-  .bottomNavi li a,
   .subscribeContent p,
   .contactContent p,
   footer p {
@@ -732,19 +728,28 @@ footer p {
   }
 
   /* SECTION: HERO */
-    .topNavi li {
+  .topNavi li {
     display: none;
   }
 
   .heroText {
     margin-top: 50%;
     padding-right: 20%;
-    width: 95%;
+    width: 100%;
+  }
+
+  .bars i {
+    display: block;
+    padding-right: 5%;
   }
 
   /* ADDITIONAL INFO */
   .bottomNavi li {
     padding: 0% 2%;
+  }
+
+  .bottomNavi li a {
+    font-size: .8rem;
   }
 
   .contactContent p {
@@ -763,29 +768,13 @@ footer p {
     margin: 0%;
   }
 
-  /* SECTION: HERO */
-  .hero {
-    background-position-x: 61%;
-  }
-
-  .heroText {
-    margin-top: 25%;
-    padding: 0%;
-    width: 50%;
-  }
-
-  .heroText h1 {
-    font-size: 3rem;
-  }
-
-  .heroText h2 {
-    font-size: .78rem;
-    font-weight: 100;
-    letter-spacing: 0px;
-  }
-
   h3 {
     font-size: 1.2rem;
+  }
+
+  /* SECTION: HERO */
+  .hero {
+    background-position-x: 65%;
   }
 
   .topNavi {
@@ -796,8 +785,28 @@ footer p {
     font-size: 0.78rem;
   }
 
+  .heroText {
+    margin-top: 40%;
+    padding: 0% 10% 0% 0%;
+    width: 50%;
+  }
+
+  .heroText h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroText h2 {
+    font-size: .7rem;
+    font-weight: 100;
+    letter-spacing: 0px;
+  }
+
   .socialIcons {
     display: none;
+  }
+
+  .bars i {
+    font-size: 1.5rem;
   }
 
   /* SECTION: INTRO */
@@ -813,6 +822,7 @@ footer p {
   .exploreContainer p {
     font-size: 1rem;
   }
+
   /* SECTION: GALLERY */
   .galleryTopImage,
   .galleryTopText,
