@@ -247,8 +247,6 @@ button a {
   width: calc(100% / 3 - 2%);
 }
 
-/* RESERVED: To ADD OVERLAY or OTHER EFFECT to .collectionContainer img*/
-
 .two img {
   margin: 0% 3%;
   /* NOTE: Style below is to target the 2ND image ONLY... under the COLLECTION/ Gallery section. This is to give it a MARGIN of 3% on LEFT and RIGHT sides without collapsing the section. */
@@ -310,6 +308,16 @@ button a {
   padding-bottom: 7.5%;
 }
 
+.galleryTopImage,
+.galleryBotImage {
+  position: relative;
+}
+
+.galleryTopImage:hover .overlay,
+.galleryBotImage:hover .overlay {
+  display: block;
+}
+
 /* TOP: LEFT & RIGHT Styles| START */
 
 .galleryTopText {
@@ -323,6 +331,24 @@ button a {
 
 .galleryTopImage {
   float: right;
+}
+
+.overlay {
+  background-color: rgba(250, 186, 99, 0.3);
+  bottom: 0;
+  display: none;
+  left: 0;
+  padding-top: 22.5%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+.overlay p {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 0 #404040;
 }
 
 /* BOTTOM: LEFT & RIGHT Styles| START */
