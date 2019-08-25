@@ -1,8 +1,5 @@
-# tommyLayProjectOne
-Week One (Single page, Arora)
+# Arora Jewellers 
 
-Hello world!
+Web Development | Zeplin Conversion
 
-Enjoy!
-
-#goCohort22 #iNeedMoreCoffee
+An accessible and responsive one-page conversion with a challenge of using only floats/ .clearfix for layouts.
